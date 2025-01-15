@@ -3,10 +3,10 @@ import torch
 from time import time
 
 # Insira o caminho para o modelo treinado "best.pt"
-model_path = 'C:\\Users\\yansa\\PycharmProjects\\PycharmProjects\\pythonProject1\\TCC\\best.pt'
+model_path = 'C:\\Users\\TCC\\best.pt'
 
-# Carregue o YOLOv5 (pasta "yolov5")
-model = torch.hub.load('C:\\Users\\yansa\\PycharmProjects\\PycharmProjects\\yolov5', 'custom', path=model_path, source='local')
+# Carregue o YOLOv5 (pasta compactada "yolov5.zip")
+model = torch.hub.load('C:\\Users\\TCC\\yolov5', 'custom', path=model_path, source='local')
 
 # Digite as posições dos furos (em milímetros)
 posicao_furos = [ # Posição dos Furos do arquivo: peca_1.dxf
